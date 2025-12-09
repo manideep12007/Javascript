@@ -29,3 +29,20 @@ function Outer(){
 const counter = Outer();
 console.log(counter());
 console.log(counter());
+
+
+/**
+Scope: 
+Region of code where variable is accessible
+Types of scope in JS:
+Global scope: variables declared outside to any function
+or block and accessed everywhere
+Local Scope: variables declared inside function or 
+within function definition block
+Block Scope: variables defined using let and const or {}
+
+Clousre:
+A clousre is an inner function that remembers variables 
+from its outer scope, even after outer function has 
+finished execution 
+*/
