@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pratice question one</title>
+</head>
+<body>
+    <script>
+        const marks = parseFloat(prompt("What is your score out of 100: "));
+        let grade;
+        if (marks >= 0 && marks <= 100) {
+            switch (true){
+                case marks >= 80:
+                    grade = 'A';
+                    break;
+                case marks >= 70:
+                    grade = 'B';
+                    break;
+                case marks >= 60: 
+                    grade = 'C';
+                    break;
+                case marks >= 50:
+                    grade = 'D';
+                    break;
+                default:
+                    grade = 'F';
+                    break;
+            }
+        } else {
+            grade = 'AB';
+        }
+        if (confirm('click ok to see grade')){
+            alert(`Your grade was ${grade}`);
+        }
+    </script>
+</body>
+</html>
